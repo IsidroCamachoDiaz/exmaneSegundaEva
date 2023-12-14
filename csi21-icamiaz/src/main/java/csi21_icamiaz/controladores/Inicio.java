@@ -46,19 +46,21 @@ public class Inicio {
 				break;
 			case 2:
 				it.eliminarVajilla(vas, vasD, res, resD, em);
+				System.out.println("Se elimino la vajilla");
 				break;
 			case 3:
-				System.out.println("eliminar stock");
+				it.eliminarStock(vas, vasD, em);
+				System.out.println("Se elimino stock");
 				break;
 			case 4:
-				System.out.println("Mostrar stock");
+				it.MostrarStock(vas, vasD, em);
 				break;
 			case 5:
 				System.out.println("Crear reserva");
 				break;
 			}
 			}catch(Exception e) {
-				System.out.println("Hubo un error en el main");
+				System.out.println("Hubo un error en el main"+e.getLocalizedMessage());
 				opcion=8;
 			}
 			

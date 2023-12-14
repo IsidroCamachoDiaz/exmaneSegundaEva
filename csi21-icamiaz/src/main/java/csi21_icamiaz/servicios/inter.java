@@ -12,4 +12,5 @@ public interface inter {
 	public void meterVajilla(List <vajillaDTO> vas,List <vajilla> vasD,EntityManager em);
 	public void eliminarVajilla(List <vajillaDTO> vas,List <vajilla> vasD,List <reservaDTO> res,List <reserva> resD,EntityManager em);
 	public void eliminarStock(List <vajillaDTO> vas,List <vajilla> vasD,EntityManager em);
+	public void MostrarStock(List <vajillaDTO> vas,List <vajilla> vasD,EntityManager em);
 }

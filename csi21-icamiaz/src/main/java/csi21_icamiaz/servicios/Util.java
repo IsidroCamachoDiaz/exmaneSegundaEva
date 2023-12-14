@@ -51,7 +51,7 @@ public class Util {
 	public static List <vajilla> pasarDtoDaoVajilla(List <vajillaDTO> res){
 		List <vajilla> vajillas= new ArrayList <vajilla>();
 		for(int i=0;i<res.size();i++) {
-			vajillas.add(new vajilla(res.get(i).nombreElemento,res.get(i).descripcion,res.get(i).cantidad,res.get(i).getCodigoElemento()));
+			vajillas.add(new vajilla(res.get(i).getIdElemento(),res.get(i).nombreElemento,res.get(i).descripcion,res.get(i).cantidad,res.get(i).getCodigoElemento()));
 		}
 		return vajillas;
 	}

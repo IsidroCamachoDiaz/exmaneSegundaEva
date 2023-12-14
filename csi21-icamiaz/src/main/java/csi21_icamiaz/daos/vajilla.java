@@ -7,6 +7,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinColumns;
+import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
@@ -45,6 +48,17 @@ public class vajilla {
 		super();
 	}
 	
+	
+	public vajilla(int idElemento, String nombreElemento, String descripcionElemento,
+			int cantidad, String codigoElemento) {
+		super();
+		this.idElemento = idElemento;
+		this.codigoElemento = codigoElemento;
+		this.nombreElemento = nombreElemento;
+		this.descripcionElemento = descripcionElemento;
+		this.cantidad = cantidad;
+	}
+
 	public vajilla(String nombreElemento, String descripcionElemento, int cantidad,String codigo) {
 		super();
 		this.nombreElemento = nombreElemento;
